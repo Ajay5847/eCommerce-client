@@ -1,0 +1,44 @@
+.hero {
+    height: 80vh;
+    background-image: url('../../assets/cover_poster.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .hero-content {
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+
+        .heading {
+            font-size: 2.3rem;
+            color: white;
+        }
+
+        .subheading {
+            font-size: 1.2rem;
+            color: whitesmoke;
+        }
+
+        .cta {
+            margin-top: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){ 
+    .hero {
+        height: 60vh;
+
+        .hero-content {
+            .heading {
+                font-size: 2rem;
+            }
+
+            .subheading {
+                font-size: 1rem;
+            }
+        }
+    }
+}

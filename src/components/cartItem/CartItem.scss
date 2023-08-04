@@ -1,0 +1,88 @@
+.cartItem {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.5);
+
+    .img-info {
+        width: 100px;
+        height: 100px;
+
+        img {
+            margin-block: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .item-info-wrapper {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+
+        .item-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            .price {
+                color: var(--secondary-text-color);
+                font-weight: 700;
+            }
+
+            .total-price {
+                margin-top: 4px;
+                color: var(--secondary-text-color);
+                font-weight: 700;
+            }
+
+
+            .quantity-selector {
+                border: 1px solid var(--secondary-text-color);
+                width: fit-content;
+
+                .btn {
+                    padding: 4px 8px;
+                    background-color: #ccc;
+                    color: var(--primary-text-color);
+                    display: inline-block;
+                    font-size: 1rem;
+                    user-select: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #b2afaf;
+                    }
+                    &:active {
+                        background-color: #ccc;
+                    }
+                }
+
+                .quantity {
+                    text-align: center;
+                    font-weight: 700;
+                    width: 30px;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .item-remove{
+            .icon {
+                color: black;
+                font-size: 1.5rem;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+
+                &:active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
